@@ -1,0 +1,11 @@
+p {
+    display: flex;
+    margin: 50px;
+    flex-wrap: nowrap;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+}
