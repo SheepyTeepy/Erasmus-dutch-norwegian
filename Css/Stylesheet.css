@@ -1,11 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 p {
     display: flex;
-    margin: 50px;
-    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 h1 {
     display: flex;
     justify-content: center;
 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0082C6;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    float: left;
+    font-size: 20px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111111;
 }
