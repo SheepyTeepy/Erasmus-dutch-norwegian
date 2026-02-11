@@ -4,6 +4,14 @@ body {
   overflow-x: hidden;
 }
 
+body.high-contrast {
+    filter: contrast(10) brightness(1);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  
+}
+
 p {
     display: flex;
     justify-content: center;
@@ -44,12 +52,15 @@ nav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    position: relative;
 }
 
 nav li a:hover {
     text-decoration: underline white;
-    font-weight: bold;
+    background-color: #0074b3;
+    border-radius: 10px;
 }
+
 
 nav li .active{
     text-decoration: underline #a497d9;
@@ -71,5 +82,64 @@ footer {
 }
 
 footer p{
-    float: right;
+    display: flex;
+    justify-content: right;
+}
+
+.accessibilitydropdown{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.accessibility-toggle {
+    padding: 10px 15px;
+    background-color: #0082C6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accessibility-toggle:hover {
+    text-decoration: underline;
+    background-color: #0074b3;
+}
+
+.accessibilitydropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0082C6;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    top: 100%;
+    right: 0;
+    margin-top: 1px;
+}
+
+.accessibilitydropdown:hover .accessibilitydropdown-content {
+    display: block;
+}
+
+.contrast-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+
+}
+
+.contrast-btn:hover {
+    background-color: #0074b3;
+    text-decoration: underline;
 }
