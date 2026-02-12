@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Css/Stylesheet.css">
     <title>Homepage</title>
 </head>
+
 <body>
-    
+
     <div class="accessibilitydropdown">
         <button class="accessibility-toggle">Accessibility</button>
         <div class="accessibilitydropdown-content">
-            <button id="contrastToggle" class="contrast-btn">high contrast</button>
+            <button id="contrastToggle" class="accessibility-btn">Contrast mode</button>
+            <button id="graysecaleToggle" class="accessibility-btn">Graysecale Mode</button>
+            <button id="textsizeToggle" class="accessibility-btn">Text size Mode</button>
         </div>
     </div>
     <nav>
-        <li ><a class="active" href="Index.html">Homepage</a></li>
+        <img src="/Img/Erasmus logo.png" alt="Erasmus Logo">
+        <li><a class="active" href="Index.html">Homepage</a></li>
         <li><a href="AboutSchools.html">About schools</a></li>
         <li><a href="Erasmus+.html">Erasmus+</a></li>
         <li><a href="EducationSystem.html">The education system</a></li>
         <li><a href="ProjectPage.html">Project</a></li>
     </nav>
-    <h1 id="title">Welcome to the website</h1>
-    <p>This Year we are gonna work together with the students from Tromso, This is a group project with 4 students and 2 teachers.</p>
-    <p>it's a collaborartion between breivang and Koning Willem 1 college, This includes Erasmus+</p>
-    <p>That is a exchange Program with international students but mainly out of Europe. The program is about Developing website and databases with the students from other school, </p>
-
+    <section class="homepage-system">
+        <h1 id="title">Welcome to the website</h1>
+        <p>This Year we are gonna work together with the students from Tromso, This is a group project with 4 students
+            and 2 teachers.</p>
+        <p>it's a collaborartion between breivang and Koning Willem 1 college, This includes Erasmus+</p>
+        <p>That is a exchange Program with international students but mainly out of Europe. The program is about
+            Developing website and databases with the students from other school, </p>
+    </section>
+    <div class="Foto-Homepage">
+        <img id="koning-logo" src="../Img/koning foto.png" alt="Koning logo">
+        <img id="breivang-logo" src="../Img/Breivang foto.png" alt="Breivang logo">
+    </div>
     <footer>
-        <p>2026 © All rights reserved by Leo</p>
+        <p>2026 © All rights reserved by Leo & luuk</p>
     </footer>
     <script src="/Javascript/Script.js"></script>
 </body>
+
 </html>
